@@ -3004,3 +3004,6 @@ video {
   min-height: 100px !important;
   /* min-width: 300px !important; */
 }
+.artman {
+  box-shadow: #fff;
+}
