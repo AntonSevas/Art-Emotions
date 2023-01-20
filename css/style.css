@@ -22,7 +22,7 @@
 
 ::before,
 ::after {
-  --tw-content: "";
+  --tw-content: '';
 }
 
 /*
@@ -44,8 +44,8 @@ html {
   tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -129,7 +129,7 @@ kbd,
 samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    'Liberation Mono', 'Courier New', monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -220,9 +220,9 @@ select {
 */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -269,7 +269,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -375,7 +375,7 @@ Set the default cursor for buttons.
 */
 
 button,
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
@@ -2072,8 +2072,8 @@ video {
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .text-base {
@@ -2656,7 +2656,7 @@ video {
 }
 
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
-  --tw-content: "this-is-also-valid]-weirdly-enough";
+  --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
 }
 
@@ -2889,5 +2889,96 @@ video {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
+  }
+}
+
+.endInfo {
+  background-color: rgb(16, 16, 16) !important;
+  padding: 0px !important;
+}
+
+.textByEnd {
+  color: #fff !important;
+}
+
+.blackLine {
+  background-color: rgb(0, 0, 0) !important;
+  margin-left: 10em !important;
+  margin-right: 10em !important;
+  margin-top: 6em !important;
+  margin-bottom: 6em !important;
+  height: 2px !important;
+  padding: 0em;
+}
+.firstText {
+  /* padding-top: 1em !important; */
+  margin-top: 5em !important;
+  margin-bottom: 3em !important;
+  padding-left: 10em !important;
+  padding-right: 10em !important;
+  background-image: linear-gradient(
+    45deg,
+    rgb(16, 16, 16),
+    rgb(16, 16, 16),
+    rgb(16, 16, 16),
+    rgb(16, 16, 16),
+    rgb(16, 16, 16)
+  );
+  /* background-color: black; */
+}
+
+.bigText {
+  font-size: 5em !important;
+  padding-top: 1em !important;
+  line-height: 1em !important;
+  animation-name: bigTextAnim;
+  color: #fff !important;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.littleText {
+  padding-top: 1em !important;
+  padding-bottom: 2em !important;
+  font-size: 1em !important;
+  color: #fff !important;
+  font-size: 1.5em !important;
+  animation-name: littleTextAnim;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  background-color: rgb(255, 255, 255) !important;
+  padding-top: 0em !important;
+  margin-top: 0ch !important;
+  position: fixed !important; /* Сделал его липким/фиксированным */
+  top: 0 !important; /* Оставайтесь на вершине */
+  width: 100% !important; /* Полная ширина */
+  transition: top 0.3s !important;
+  display: block !important;
+}
+
+.nav.out {
+  transform: translateY(-100%);
+}
+
+@keyframes littleTextAnim {
+  from {
+    color: rgba(0, 0, 0, 0.358);
+  }
+  to {
+    color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes bigTextAnim {
+  from {
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+  }
+  to {
+    text-shadow: 0 0 0px rgb(255, 255, 255);
   }
 }
