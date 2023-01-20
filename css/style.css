@@ -2913,7 +2913,8 @@ video {
 .firstText {
   /* padding-top: 1em !important; */
   margin-top: 5em !important;
-  margin-bottom: 3em !important;
+  padding-top: 1.5em;
+  margin-bottom: 4em !important;
   padding-left: 10em !important;
   padding-right: 10em !important;
   background-image: linear-gradient(
