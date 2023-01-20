@@ -2,7 +2,7 @@
 class TextScramble {
   constructor(el) {
     this.el = el;
-    this.chars = ' ';
+    this.chars = " ";
     this.update = this.update.bind(this);
   }
   setText(newText) {
@@ -11,10 +11,10 @@ class TextScramble {
     const promise = new Promise((resolve) => (this.resolve = resolve));
     this.queue = [];
     for (let i = 0; i < length; i++) {
-      const from = oldText[i] || '';
-      const to = newText[i] || '';
-      const start = Math.floor(Math.random() * 150);
-      const end = start + Math.floor(Math.random() * 150);
+      const from = oldText[i] || "";
+      const to = newText[i] || "";
+      const start = Math.floor(Math.random() * 250);
+      const end = start + Math.floor(Math.random() * 250);
       this.queue.push({ from, to, start, end });
     }
     cancelAnimationFrame(this.frameRequest);
@@ -23,7 +23,7 @@ class TextScramble {
     return promise;
   }
   update() {
-    let output = '';
+    let output = "";
     let complete = 0;
     for (let i = 0, n = this.queue.length; i < n; i++) {
       let { from, to, start, end, char } = this.queue[i];
@@ -35,7 +35,7 @@ class TextScramble {
           char = this.randomChar();
           this.queue[i].char = char;
         }
-        output += '<span class="dud-text">' + char + '</span>';
+        output += '<span class="dud-text">' + char + "</span>";
       } else {
         output += from;
       }
@@ -62,27 +62,27 @@ const phrases = [
   '"Какое чудо — восхищаться в живописи тем, чем в реальности не восхищаешься."\n Ф. Делакруа',
   '"Неважно, насколько плохо вы рисуете, до тех пор, пока вы рисуете плохо не так, как другие."\n Д. Мур',
 ];
-const el = document.querySelector('.scramble-text');
+const el = document.querySelector(".scramble-text");
 const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 7000);
+    setTimeout(next, 12000);
   });
   counter = (counter + 1) % phrases.length;
 };
 next();
 
-var header = $('.nav'),
+var header = $(".nav"),
   scrollPrev = 0;
 
 $(window).scroll(function () {
   var scrolled = $(window).scrollTop();
 
   if (scrolled > 100 && scrolled > scrollPrev) {
-    header.addClass('out');
+    header.addClass("out");
   } else {
-    header.removeClass('out');
+    header.removeClass("out");
   }
   scrollPrev = scrolled;
 });
