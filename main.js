@@ -2,7 +2,7 @@
 class TextScramble {
   constructor(el) {
     this.el = el;
-    this.chars = "♡";
+    this.chars = '♡';
     this.update = this.update.bind(this);
   }
   setText(newText) {
@@ -11,8 +11,8 @@ class TextScramble {
     const promise = new Promise((resolve) => (this.resolve = resolve));
     this.queue = [];
     for (let i = 0; i < length; i++) {
-      const from = oldText[i] || "";
-      const to = newText[i] || "";
+      const from = oldText[i] || '';
+      const to = newText[i] || '';
       const start = Math.floor(Math.random() * 120);
       const end = start + Math.floor(Math.random() * 120);
       this.queue.push({ from, to, start, end });
@@ -23,7 +23,7 @@ class TextScramble {
     return promise;
   }
   update() {
-    let output = "";
+    let output = '';
     let complete = 0;
     for (let i = 0, n = this.queue.length; i < n; i++) {
       let { from, to, start, end, char } = this.queue[i];
@@ -35,7 +35,7 @@ class TextScramble {
           char = this.randomChar();
           this.queue[i].char = char;
         }
-        output += '<span class="dud-text">' + char + "</span>";
+        output += '<span class="dud-text">' + char + '</span>';
       } else {
         output += from;
       }
@@ -62,7 +62,7 @@ const phrases = [
   '"Какое чудо — восхищаться в живописи тем, чем в реальности не восхищаешься."\n Ф. Делакруа',
   '"Неважно, насколько плохо вы рисуете, до тех пор, пока вы рисуете плохо не так, как другие."\n Д. Мур',
 ];
-const el = document.querySelector(".scramble-text");
+const el = document.querySelector('.scramble-text');
 const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
@@ -73,16 +73,28 @@ const next = () => {
 };
 next();
 
-var header = $(".nav"),
-  scrollPrev = 0;
+// Скрытие меню при скролинге
 
-$(window).scroll(function () {
-  var scrolled = $(window).scrollTop();
+let lastScroll = 0;
+const defaultOffset = 200;
+const header = document.querySelector('.nav');
 
-  if (scrolled > 100 && scrolled > scrollPrev) {
-    header.addClass("out");
-  } else {
-    header.removeClass("out");
+const scrollPosition = () =>
+  window.pageYOffset || document.documentElement.scrollTop;
+const containHide = () => header.classList.contains('hide');
+
+window.addEventListener('scroll', () => {
+  if (
+    scrollPosition() > lastScroll &&
+    !containHide() &&
+    scrollPosition() > defaultOffset
+  ) {
+    //scroll down
+    header.classList.add('hide');
+  } else if (scrollPosition() < lastScroll && containHide()) {
+    //scroll up
+    header.classList.remove('hide');
   }
-  scrollPrev = scrolled;
+
+  lastScroll = scrollPosition();
 });
