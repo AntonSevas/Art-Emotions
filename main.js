@@ -2,7 +2,7 @@
 class TextScramble {
   constructor(el) {
     this.el = el;
-    this.chars = " ";
+    this.chars = "♡";
     this.update = this.update.bind(this);
   }
   setText(newText) {
@@ -13,8 +13,8 @@ class TextScramble {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || "";
       const to = newText[i] || "";
-      const start = Math.floor(Math.random() * 250);
-      const end = start + Math.floor(Math.random() * 250);
+      const start = Math.floor(Math.random() * 120);
+      const end = start + Math.floor(Math.random() * 120);
       this.queue.push({ from, to, start, end });
     }
     cancelAnimationFrame(this.frameRequest);
