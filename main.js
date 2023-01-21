@@ -73,7 +73,7 @@ const next = () => {
 };
 next();
 
-// Скрытие меню при скролинге
+// Скрытие меню при скролинге //
 
 let lastScroll = 0;
 const defaultOffset = 200;
