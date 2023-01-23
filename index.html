@@ -9,13 +9,13 @@
     <script async src="/main.js"></script>
   </head>
   <body>
-    <!-- Основная панель -->
+    <!-- Header -->
 
-    <header class="nav text-gray-700 body-font mt-4">
+    <header class="nav text-gray-700 body-font flex-auto text-xl mt-4">
       <div
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+        class="container mx-auto flex flex-wrap p-5 flex-col sm:flex-row items-center"
       >
-        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <nav class="flex w-2/5">
           <a class="mr-5 text-mainColor hover:text-pink-400" href="/index.html"
             >Каталог</a
           >
@@ -25,17 +25,17 @@
           <a class="hover:text-mainColor" href="/pages/About.html">О Нас</a>
         </nav>
         <a
-          class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
+          class="flex order-none w-1/5 title-font font-medium text-gray-900 items-center justify-center mb-4 md:mb-0"
         >
           <img
-            class="logo"
+            class="logo h-10 md:h-20"
             src="/Logo Real Art/White Back/png/logo-no-background.png"
             alt="Real Art"
           />
         </a>
-        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <div class="w-2/5 inline-flex justify-end ml-0">
           <button
-            class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:b-matext-mainColor rounded text-base mt-4 md:mt-0"
+            class="inline-flex items-center bg-gray-100 border-0 text-xl py-1 px-3 focus:outline-none hover:b-matext-mainColor rounded text-base mt-4 md:mt-0"
           >
             Корзина
             <svg
@@ -56,13 +56,17 @@
 
     <!-- Высказывания -->
 
-    <section class="firstText text-black body-font">
+    <section class="firstText flex-auto text-black body-font">
       <div class="container mx-auto flex flex-col items-center">
         <div class="flex-col items-center text-center">
-          <h1 class="bigText title-font font-medium text-gray-900">
+          <h1
+            class="bigText text-4xl lg:text-7xl title-font font-medium text-gray-900"
+          >
             Real <span class="art"> art </span> is available
           </h1>
-          <h2 class="scramble-text littleText mb-8 leading-relaxed"></h2>
+          <h2
+            class="scramble-text littleText lg:text-2xl mb-8 leading-relaxed"
+          ></h2>
 
           <div class="flex justify-center"></div>
         </div>
@@ -82,7 +86,7 @@
                 src="https://static.insales-cdn.com/files/1/5790/10983070/original/Jose-Basso.-Minimalizm-v-izobrazitelnom-iskusstve.-Kartina-shestaya.jpg"
               />
               <div
-                class="px-8 py-5 relative z-10 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
+                class="px-8 py-5 relative z-0 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
               >
                 <h2
                   class="tracking-widest text-sm t itle-font font-medium uppercase text-mainColor mb-1"
@@ -95,7 +99,7 @@
                 <p class="leading-relaxed">Материал: акрил, холст.</p>
                 <div class="mt-64 flex flex-col text-white font-bold">
                   <span
-                    class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    class="translate-y-8 transform relative opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
                   >
                     2&nbsp;900&nbsp;₽</span
                   >
@@ -112,7 +116,7 @@
                 src="https://static.insales-cdn.com/files/1/5749/10983029/original/picfull2_54808f5017e28.jpg"
               />
               <div
-                class="px-8 py-5 relative z-10 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
+                class="px-8 py-5 relative z-0 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
               >
                 <h2
                   class="tracking-widest text-sm t itle-font font-medium uppercase text-mainColor mb-1"
@@ -141,7 +145,7 @@
                 src="https://static.insales-cdn.com/files/1/5744/10983024/original/Robert-Bateman.-Animalisticheskaya-zhivopis.-Lvyi.jpg"
               />
               <div
-                class="px-8 py-5 relative z-10 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
+                class="px-8 py-5 relative z-0 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
               >
                 <h2
                   class="tracking-widest text-sm t itle-font font-medium uppercase text-mainColor mb-1"
@@ -171,7 +175,7 @@
                 src="https://static.insales-cdn.com/files/1/5684/10982964/original/ccafd6e36a3d4ffea50c6331a773bd53.jpg"
               />
               <div
-                class="px-8 py-5 relative z-10 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
+                class="px-8 py-5 relative z-0 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
               >
                 <h2
                   class="tracking-widest text-sm t itle-font font-medium uppercase text-mainColor mb-1"
@@ -201,7 +205,7 @@
                 src="https://avatars.dzeninfra.ru/get-zen_doc/1594475/pub_5c71c134ae526300b31f2652_5c71d0768fd40000b3b2afc7/scale_1200"
               />
               <div
-                class="px-8 py-5 relative z-10 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
+                class="px-8 py-5 relative z-0 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
               >
                 <h2
                   class="tracking-widest text-sm t itle-font font-medium uppercase text-mainColor mb-1"
@@ -228,7 +232,7 @@
                 src="https://static.insales-cdn.com/files/1/5650/10982930/original/osnovnye-napravleniya-v-zhivopisi4.jpg"
               />
               <div
-                class="px-8 py-5 relative z-10 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
+                class="px-8 py-5 relative z-0 w-full border-4 border-gray-200 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100"
               >
                 <h2
                   class="tracking-widest text-sm t itle-font font-medium uppercase text-mainColor mb-1"
@@ -253,7 +257,7 @@
       </div>
     </section>
 
-    <!-- Нижняя информация -->
+    <!-- Footer -->
 
     <div class="endInfo">
       <div
@@ -268,7 +272,7 @@
               class="inline-flex items-center"
             >
               <img
-                class="logo"
+                class="logo h-10 md:h-20"
                 src="/Logo Real Art/png/logo-no-background.png"
                 alt="Real Art"
               />
