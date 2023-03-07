@@ -1,0 +1,74 @@
+[
+  {
+    "id": "el1",
+    "name": "КАЕН БРОССC",
+    "art": "В добрый путь",
+    "material": "Aкрил",
+    "img": "https://img.freepik.com/free-photo/top-view-acrylic-paint-background_23-2149127642.jpg?w=1800&t=st=1678210440~exp=1678211040~hmac=c76938d05ecbe300238d1fb9b9fc33531d109ba218f8c21e66f643ab7afdbb1f",
+    "price": 13600
+  },
+  {
+    "id": "el2",
+    "name": "КАЕН БРОССC",
+    "art": "Звездопад",
+    "material": "Aкрил, холст",
+    "img": "https://img.freepik.com/free-photo/colorful-3d-shapes-vaporwave-style_23-2148981126.jpg?w=1480&t=st=1678210492~exp=1678211092~hmac=4090daf98fb86e7c5363db44aec34d9b33e37ab399cf564c276d2f8d766a0825",
+    "price": 23900
+  },
+  {
+    "id": "el3",
+    "name": "АВЕН ВЕС",
+    "art": "Цари природы ",
+    "material": "Aкрил, холст",
+    "img": "https://img.freepik.com/free-photo/close-up-photo-oil-paints-canvas-wall_176420-2849.jpg?w=1800&t=st=1678210517~exp=1678211117~hmac=9661438fb93019c2834ad1e7c56e4fa8b91f5bc15cac952b1b176616b975b446",
+    "price": 21600
+  },
+  {
+    "id": "el4",
+    "name": "НАВЕН ВАВЕН",
+    "art": "Смотрю",
+    "material": "Масло",
+    "img": "https://img.freepik.com/free-photo/black-liquid-marble-background-abstract-flowing-texture-experimental-art_53876-103629.jpg?w=1800&t=st=1678210542~exp=1678211142~hmac=624ea5fed23e9a214c5c2f4a507aea483a083ac35a6d7a4be51418cbb2bfc8dc",
+    "price": 19900
+  },
+  {
+    "id": "el5",
+    "name": "АЙЛЭНД ОВЕРТОН",
+    "art": "Едем",
+    "material": "Пластилин",
+    "img": "https://img.freepik.com/free-photo/blue-oil-paint-strokes-textured-background_53876-98328.jpg?w=1800&t=st=1678210583~exp=1678211183~hmac=b9de1d5d06772a23ef8145f29fbbbc2c4ae94cf6a5a8df6e8f60445dc9d4fa10",
+    "price": 14500
+  },
+  {
+    "id": "el6",
+    "name": "ВАН ХОК",
+    "art": "Звездная ночь",
+    "material": "Акварель",
+    "img": "https://img.freepik.com/free-photo/abstract-paint-canvas_53876-88900.jpg?w=1800&t=st=1678210628~exp=1678211228~hmac=61549579ab74fbac01b2e33b6970419a33a937abd4693637c96738d58fb80139",
+    "price": 14600
+  },
+  {
+    "id": "el7",
+    "name": "СПЭЙСИ",
+    "art": "Огого",
+    "material": "Aкрил, холст",
+    "img": "https://img.freepik.com/free-photo/blue-floral-wall-textured-background_53876-102791.jpg?w=1800&t=st=1678210664~exp=1678211264~hmac=b4f169a7002a63001baed1e03ea10585d4c6e5c5c4c51ffa4c022efa6c06497f",
+    "price": 13600
+  },
+  {
+    "id": "el8",
+    "name": "ДЖЕКИ",
+    "art": "Красиво",
+    "material": "Aкрил, холст",
+    "img": "https://img.freepik.com/free-photo/flat-lay-acrylic-paint-wallpaper_23-2149127614.jpg?w=1800&t=st=1678210709~exp=1678211309~hmac=f2d1a8129fd638200da413c1ab213920e9d063b212aef2e65debcf506bd15730",
+    "price": 28700
+  },
+  {
+    "id": "el9",
+    "name": "ДЖОН",
+    "art": "Раздавил апельсин",
+    "material": "Aкрил, холст",
+    "img": "https://img.freepik.com/free-photo/top-view-artistic-copy-space-abstract-painting_23-2148660954.jpg?w=1800&t=st=1678210746~exp=1678211346~hmac=db232b8e734b1903ebf44d7bc55e5e6d994c05a297f29520567a7dc294487029",
+    "price": 18100
+  }
+]
