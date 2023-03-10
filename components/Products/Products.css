@@ -19,21 +19,48 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
+
+.products-element:hover .products-element__name {
+  display: block;
+}
+.products-element:hover .products-element__price {
+  display: block;
+}
+.products-element:hover .products-element__btn {
+  display: block;
+}
+.products-element:hover .products-element__art {
+  display: block;
+}
+.products-element:hover .products-element__material {
+  display: block;
+}
+
+.products-element__art {
+  display: none;
+}
+.products-element__material {
+  display: none;
+}
+
 .products-element__name {
+  display: none;
   margin-bottom: auto;
   font-weight: bold;
 }
 .products-element__img {
   width: 100%;
-  height: 270px;
+  height: 100%;
   margin-top: var(--spacing-medium);
   object-fit: contain;
 }
 .products-element__price {
+  display: none;
   margin-top: var(--spacing-medium);
   color: var(--color-unaccent);
 }
 .products-element__btn {
+  display: none;
   margin-top: var(--spacing-medium);
   padding: var(--spacing-small) var(--spacing-medium);
   border: 1px solid var(--color-unaccent);
@@ -47,6 +74,7 @@
 
 /* здесь добавлен модификатор актив, для дальнейшего добавления в js изменения кнопки */
 .products-element__btn_active {
+  display: none;
   border: 1px solid transparent;
   background-image: var(--linear-gradient);
 }

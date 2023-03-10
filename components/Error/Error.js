@@ -1,6 +1,6 @@
 class Error {
-  render() {
-    const html = `
+    render() {
+        const html = `
             <div class="error-container">
                 <div class="error-message">
                     <h3>Нет доступа!</h3>
@@ -9,8 +9,8 @@ class Error {
             </div>
         `;
 
-    ROOT_ERROR.innerHTML = html;
-  }
+        ROOT_ERROR.innerHTML = html;
+    }
 }
 
 const errorPage = new Error();

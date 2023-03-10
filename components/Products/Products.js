@@ -64,7 +64,7 @@ class Products {
     // на каждой этерации нам нужно добавлять новый элемент li
     let htmlCatalog = '';
 
-    CATALOG.forEach(({ id, name, price, img }) => {
+    CATALOG.forEach(({ id, name, art, material, price, img }) => {
       let activeClass = '';
       let activeText = '';
 
@@ -85,16 +85,20 @@ class Products {
       // выражений внутри. С ними вы можете использовать многострочные литералы и строковую
       // интерполяцию.
       htmlCatalog += `
-        <li class="products-element">
-          <span class="products-element__name">${name}</span>
-          <img class="products-element__img" src="${img}" />
-          <span class="products-element__price">
+          <li class="products-element">
+            <img class="products-element__img" src="${img}" />
+            <span class="products-element__name">${name}</span>
+            <span class="products-element__art">${art}</span>
+            <span class="products-element__material">${material}</span>
+          
+            <span class="products-element__price">
             ⚡️ ${price.toLocaleString()} USD
-          </span>
-          <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');"> 
+            </span>
+            <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');"> 
             ${activeText}
-          </button> 
-        </li> 
+            </button> 
+          </li>
+
       `;
       // выше был добавлен обработчик события, чтобы мы могли по щелчку изменять локальное хранилище
       // знак доллара обычно подразумевает document.getElementById

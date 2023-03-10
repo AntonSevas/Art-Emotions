@@ -12,7 +12,7 @@ class Shopping {
     let sumCatalog = 0;
 
     // строки внутри окна с корзиной
-    CATALOG.forEach(({ id, name, art, material, price }) => {
+    CATALOG.forEach(({ id, name, price }) => {
       if (productsStore.indexOf(id) !== -1) {
         htmlCatalog += `
                   <tr>
