@@ -85,19 +85,23 @@ class Products {
       // выражений внутри. С ними вы можете использовать многострочные литералы и строковую
       // интерполяцию.
       htmlCatalog += `
-          <li class="products-element">
-            <img class="products-element__img" src="${img}" />
-            <span class="products-element__name">${name}</span>
-            <span class="products-element__art">${art}</span>
-            <span class="products-element__material">${material}</span>
+          <div class="products-one-card">
+            <li class="products-element">
+              <img class="products-element__img" src="${img}" />
+                <div class="products-text">
+                  <span class="products-element__name">${name}</span>
+                  <span class="products-element__art">${art}</span>
+                  <span class="products-element__material">${material}</span>
           
-            <span class="products-element__price">
-            ⚡️ ${price.toLocaleString()} USD
-            </span>
-            <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');"> 
-            ${activeText}
-            </button> 
-          </li>
+                  <span class="products-element__price">
+                  ${price.toLocaleString()} USD
+                  </span>
+                  <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');"> 
+                  ${activeText}
+                  </button>
+                </div>
+            </li>
+          </div>
 
       `;
       // выше был добавлен обработчик события, чтобы мы могли по щелчку изменять локальное хранилище

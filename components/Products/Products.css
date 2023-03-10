@@ -1,11 +1,11 @@
 .products-container {
   display: grid;
   /* Нужно что бы колнки автоматически перестраивались с минимальной и максимальной шириной */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   /* чтобы между колонками был отступ */
   grid-gap: 45px;
   width: 80%;
-  max-width: 1200px;
+
   margin: var(--spacing-large) auto;
 }
 .products-element {
@@ -13,56 +13,43 @@
   /* что бы были колонки */
   flex-direction: column;
   /* что бы прижимались к нижнему краю */
-  justify-content: flex-end;
-  padding: 25px 20px;
   background-color: var(--color-white);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
 
-.products-element:hover .products-element__name {
+.products-element:hover .products-text {
   display: block;
 }
-.products-element:hover .products-element__price {
-  display: block;
+
+.products-text:hover {
+  background-color: rgba(136, 136, 136, 0.515);
 }
-.products-element:hover .products-element__btn {
-  display: block;
-}
-.products-element:hover .products-element__art {
-  display: block;
-}
-.products-element:hover .products-element__material {
-  display: block;
+
+.products-text {
+  display: none;
+  position: absolute;
 }
 
 .products-element__art {
-  display: none;
 }
 .products-element__material {
-  display: none;
 }
 
 .products-element__name {
-  display: none;
   margin-bottom: auto;
   font-weight: bold;
 }
 .products-element__img {
   width: 100%;
   height: 100%;
-  margin-top: var(--spacing-medium);
-  object-fit: contain;
+  object-fit: cover;
 }
 .products-element__price {
-  display: none;
   margin-top: var(--spacing-medium);
   color: var(--color-unaccent);
 }
 .products-element__btn {
-  display: none;
-  margin-top: var(--spacing-medium);
-  padding: var(--spacing-small) var(--spacing-medium);
   border: 1px solid var(--color-unaccent);
   border-radius: var(--border-radius);
   cursor: pointer;
