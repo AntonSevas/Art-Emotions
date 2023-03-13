@@ -25,38 +25,30 @@
 .products-element:hover {
   box-shadow: 0 0 15px rgba(99, 99, 99, 0.803);
   transform: scale(1.02);
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .products-text:hover {
   background-color: rgba(63, 63, 63, 0.772);
+  transition-duration: 0.3s;
+}
+
+.products-text {
   animation-name: animationText;
-  transition-duration: 0.4s;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-timing-function: ease;
 }
 
 @keyframes animationText {
   from {
+    background-color: transparent;
+    padding-top: 2em;
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
-
-.products-text:hover {
-  animation-name: animationText2;
-  animation-duration: 0.4s;
-  animation-timing-function: ease;
-}
-
-@keyframes animationText2 {
-  from {
-    padding-top: 2em;
-  }
-  to {
+    background-color: rgba(63, 63, 63, 0.772);
     padding-top: 0em;
+    opacity: 1;
   }
 }
 
