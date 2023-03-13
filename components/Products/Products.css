@@ -22,8 +22,42 @@
   display: block;
 }
 
+.products-element:hover {
+  box-shadow: 0 0 15px rgba(99, 99, 99, 0.803);
+  transform: scale(1.02);
+  transition-duration: 0.3s;
+}
+
 .products-text:hover {
-  background-color: rgba(123, 123, 123, 0.515);
+  background-color: rgba(63, 63, 63, 0.772);
+  animation-name: animationText;
+  transition-duration: 0.4s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes animationText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.products-text:hover {
+  animation-name: animationText2;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+}
+
+@keyframes animationText2 {
+  from {
+    padding-top: 2em;
+  }
+  to {
+    padding-top: 0em;
+  }
 }
 
 .products-text {
@@ -38,16 +72,23 @@
 .products-element__art {
   color: white;
   margin-left: 1em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 .products-element__material {
   color: white;
   margin-left: 1em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .products-element__name {
   margin-left: 1em;
   margin-top: 1em;
-  font-weight: bold;
+  color: rgb(255, 80, 197);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .products-element__img {
   width: 100%;
@@ -59,8 +100,12 @@
   align-items: center;
 }
 .products-element__price {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 1em;
+  margin-top: 8em;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .products-element__btn {
   color: white;
@@ -71,10 +116,13 @@
   background: none;
   font-family: inherit;
   font-size: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* здесь добавлен модификатор актив, для дальнейшего добавления в js изменения кнопки */
 .products-element__btn_active {
-  border: 1px solid transparent;
-  background-image: var(--linear-gradient);
+  color: rgb(255, 130, 213);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
