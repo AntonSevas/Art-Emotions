@@ -85,22 +85,22 @@ class Products {
       // выражений внутри. С ними вы можете использовать многострочные литералы и строковую
       // интерполяцию.
       htmlCatalog += `
-          <div class="products-one-card">
-            <li class="products-element">
+          <div class="products-container">
+            <div class="products-element">
               <img class="products-element__img" src="${img}" />
                 <div class="products-text">
-                  <span class="products-element__name">${name}</span>
-                  <span class="products-element__art">${art}</span>
-                  <span class="products-element__material">${material}</span>
+                  <div class="products-element__name">${name}</div>
+                  <div class="products-element__art">${art}</div>
+                  <div class="products-element__material">${material}</div>
           
-                  <span class="products-element__price">
+                  <div class="products-element__price">
                   ${price.toLocaleString()} USD
-                  </span>
+                  </div>
                   <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');"> 
                   ${activeText}
                   </button>
                 </div>
-            </li>
+            </div>
           </div>
 
       `;
