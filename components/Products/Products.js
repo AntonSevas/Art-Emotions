@@ -28,8 +28,8 @@ class Products {
 
   constructor() {
     this.classNameActive = 'products-element__btn_active'; // сюда пишем название класса, а дальше обьявляем
-    this.labelAdd = 'Добавить в корзину';
-    this.labelRemove = 'Удалить из корзины';
+    this.labelAdd = 'В корзину';
+    this.labelRemove = 'Добавлено';
     // И теперь заменяем переменные на текст в коде ниже соответственно
   }
 

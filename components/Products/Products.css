@@ -23,7 +23,7 @@
 }
 
 .products-text:hover {
-  background-color: rgba(136, 136, 136, 0.515);
+  background-color: rgba(123, 123, 123, 0.515);
 }
 
 .products-text {
@@ -36,12 +36,17 @@
 }
 
 .products-element__art {
+  color: white;
+  margin-left: 1em;
 }
 .products-element__material {
+  color: white;
+  margin-left: 1em;
 }
 
 .products-element__name {
-  margin-bottom: auto;
+  margin-left: 1em;
+  margin-top: 1em;
   font-weight: bold;
 }
 .products-element__img {
@@ -54,12 +59,13 @@
   align-items: center;
 }
 .products-element__price {
-  margin-top: var(--spacing-medium);
-  color: var(--color-unaccent);
+  color: white;
+  margin-left: 1em;
 }
 .products-element__btn {
-  border: 1px solid var(--color-unaccent);
-  border-radius: var(--border-radius);
+  color: white;
+  margin-left: 1em;
+  background-image: var(--linear-gradient);
   cursor: pointer;
   outline: none;
   background: none;
